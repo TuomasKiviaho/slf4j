@@ -1,0 +1,16 @@
+Implementation-Title: slf4j-osgi
+Bundle-ManifestVersion: 2
+Fragment-Host: slf4j.api
+Bundle-SymbolicName: slf4j.osgi
+Bundle-Name: slf4j-osgi
+Bundle-Vendor: SLF4J.ORG
+Bundle-RequiredExecutionEnvironment: J2SE-1.3
+Export-Package: org.slf4j.impl;version="${parsedVersion.osgiVersion}"
+Import-Package: org.osgi.framework;version="[1.5,2)",
+ org.osgi.service.cm;version="[1.3,2)",
+ org.osgi.service.log;version="[1.3,2)",
+ org.osgi.util.tracker;version="[1.3,2)",
+ org.slf4j;version="${parsedVersion.osgiVersion}",
+ org.slf4j.helpers;version="${parsedVersion.osgiVersion}",
+ org.slf4j.spi;version="${parsedVersion.osgiVersion}"
+Service-Component: OSGI-INF/activator.xml

@@ -1,0 +1,5 @@
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="start" deactivate="stop" enabled="true" modified="updated" xmlns="http://www.osgi.org/xmlns/scr/v1.1.0" xsi:schemaLocation="http://www.osgi.org/xmlns/scr/v1.1.0 http://www.osgi.org/xmlns/scr/v1.1.0.xsd">
+	<implementation class="org.slf4j.Activator" />
+ <reference cardinality="0..n" interface="org.osgi.service.log.LogService" policy="dynamic"/>
+ <property name="org.osgi.service.log" type="Integer" value="3"/>
+</component>
